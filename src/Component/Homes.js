@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
 import "../../src/Homestyles.css"
 import { Row,Col,Container } from 'react-bootstrap'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaSadTear } from 'react-icons/fa';
 import { FaCrown } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 
 function Homes(props) {
    // document.body.style.background = 'none';
@@ -349,9 +350,14 @@ function Homes(props) {
     <div className='input1 mb-3 d-flex align-items-center'>{answer1}</div>
     <div className='input1 mb-3 d-flex align-items-center'>{answer2}</div>
 
-      
+
     </div>
-            
+    <div className='home_icon'>
+    <Link to="/loginsection">
+    <FaHome  size={36}  className='hom'/>
+    </Link>
+    
+    </div>    
     <div className='winner_box d-flex justify-content-center align-items-center ms-3 me-3'>
     {wino ? <h2>Congrats {answer2} you won!!!&nbsp;<FaCrown style={{ color: "#FFD43B", fontSize: "2em" }} /></h2> : ""}
     {winx?<h2>Congrats {answer1} you won!!!&nbsp;<FaCrown style={{ color: "#FFD43B", fontSize: "2em" }} /></h2>:""}

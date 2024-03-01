@@ -89,22 +89,14 @@ body {
     .login_section h1{
         font-size: 2.5rem; 
     }
-    body {
-        /* background: linear-gradient(rgb(68 73 246 / 67%), rgb(39 181 115 / 69%));*/
-        background-image: url("../src/assets/img2.jpg") ;
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-         height: 100vh;
-         padding: 0px;
-          margin: 0px;
-        
-     }
 }
-@media(max-width:992px){
+@media (max-width:992px) {
     .login_button a{
+
         padding: 10px;
+
     }
+
 }
 @media (max-width:1400px) {
     .login_section h2{

@@ -195,6 +195,11 @@
     .main_page .cross{
         font-size: 3rem;
     }
+    .main_page .name_class .input1,.input2{
+
+        font-size: 1rem;
+ 
+    }
 }
 @media (min-width:991.5px){
     .box_shape .custom-column {

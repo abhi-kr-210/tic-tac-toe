@@ -347,8 +347,8 @@ function Homes(props) {
     <section className='main_page'>
     
     <div className='d-flex justify-content-between ms-5 me-5 mt-3 name_class'>
-    <div className='input1 mb-3 d-flex align-items-center'>{answer1}</div>
-    <div className='input1 mb-3 d-flex align-items-center'>{answer2}</div>
+    <div className='input1 mb-3 d-flex align-items-center'><i class="bi bi-x-circle-fill" style={{color:"red"}}></i>&nbsp;{answer1}</div>
+    <div className='input1 mb-3 d-flex align-items-center'><i class="bi bi-0-circle-fill" style={{color:"red"}}></i>&nbsp;{answer2}</div>
 
 
     </div>

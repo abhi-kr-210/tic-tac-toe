@@ -32,14 +32,14 @@ function Loginsection() {
 
        <label htmlFor="username1">USERNAME-1</label>
       
-       <input onChange={(e)=>setuser1(e.target.value)} type="text" placeholder='Enter Your Name'
+       <input onChange={(e)=>setuser1(e.target.value)} type="text" placeholder='(X) Enter Your Name'
        value={user1} id='username1'/>
 
        </div>
        <div className='user2_name mb-5'>
        <label htmlFor="username2">USERNAME-2</label>
 
-       <input onChange={(e)=>setuser2(e.target.value)} type="text" placeholder='Enter Your Name'
+       <input onChange={(e)=>setuser2(e.target.value)} type="text" placeholder='(O) Enter Your Name'
        value={user2} id='username2'/>
 
        </div>      

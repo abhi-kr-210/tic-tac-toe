@@ -5,6 +5,7 @@ import Homes from "./Component/Homes";
 import Loginsection from "./Component/Loginsection";
 function App() {
   return (
+    //something added
     <BrowserRouter>
     <Routes>  
         <Route path="/" element={<Loginsection />} />  

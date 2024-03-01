@@ -1,12 +1,11 @@
 import React,{useState} from 'react'
 import "../../src/Homestyles.css"
-import { Row,Col,Container, Button } from 'react-bootstrap'
+import { Row,Col,Container } from 'react-bootstrap'
 import { useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCrown } from '@fortawesome/free-solid-svg-icons';
+import { FaSadTear } from 'react-icons/fa';
 import { FaCrown } from 'react-icons/fa';
 
-function Homes() {
+function Homes(props) {
    // document.body.style.background = 'none';
     const location=useLocation();
     const data=location.state?.data;
@@ -28,6 +27,8 @@ function Homes() {
     const [count1,setcount1]=useState(0);
    const [wino,setwino]=useState(false);
    const [winx,setwinx]=useState(false);
+   const [count,setcount]=useState(0);
+   
     const [mat, setMat] = useState([
         [-1, -1, -1],
         [-1, -1, -1],
@@ -53,6 +54,7 @@ function Homes() {
        
     };
     const updateCell = (rowIndex, colIndex, value) => {
+        
         const newMat = [...mat];
         newMat[rowIndex][colIndex] = value;
         setMat(newMat);
@@ -116,7 +118,7 @@ function Homes() {
             if(tic_11!=='X'){
             settic_11('O');
             setvalue(-1);
-  
+            setcount(count+1);
            updateCell(0,0,0);
 
 
@@ -126,6 +128,7 @@ function Homes() {
             if(tic_11!=='O'){
             settic_11('X');
             setvalue(-1);
+            setcount(count+1);
             updateCell(0,0,1);
             } // Set 'X' if the button click value is 0
         }
@@ -136,6 +139,7 @@ function Homes() {
             if(tic_12!=='X'){
                 settic_12('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(0,1,0);
             }
              // Set 'O' if the button click value is 1
@@ -144,6 +148,7 @@ function Homes() {
             if(tic_12!=='O'){
                 settic_12('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(0,1,1);
             }
              // Set 'X' if the button click value is 0        
@@ -154,6 +159,7 @@ function Homes() {
             if(tic_13!=='X'){
                 settic_13('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(0,2,0);
             }
              // Set 'O' if the button click value is 1
@@ -162,6 +168,7 @@ function Homes() {
             if(tic_13!=='O'){
                 settic_13('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(0,2,1);
             }
             // Set 'X' if the button click value is 0
@@ -174,6 +181,7 @@ function Homes() {
             if(tic_21!=='X'){
                 settic_21('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,0,0);
             }
              // Set 'O' if the button click value is 1
@@ -182,6 +190,7 @@ function Homes() {
             if(tic_21!=='O'){
                 settic_21('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,0,1);
             }
              // Set 'X' if the button click value is 0
@@ -194,6 +203,7 @@ function Homes() {
             if(tic_22!=='X'){
                 settic_22('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,1,0);
             }
              // Set 'O' if the button click value is 1
@@ -202,6 +212,7 @@ function Homes() {
             if(tic_22!=='O'){
                 settic_22('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,1,1);
             }
              // Set 'X' if the button click value is 0
@@ -214,6 +225,7 @@ function Homes() {
             if(tic_23!=='X'){
                 settic_23('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,2,0);
             }
              // Set 'O' if the button click value is 1
@@ -222,6 +234,7 @@ function Homes() {
             if(tic_23!=='O'){
                 settic_23('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(1,2,1);
             }
              // Set 'X' if the button click value is 0
@@ -234,6 +247,7 @@ function Homes() {
             if(tic_31!=='X'){
                 settic_31('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,0,0);
             }
              // Set 'O' if the button click value is 1
@@ -242,6 +256,7 @@ function Homes() {
             if(tic_31!=='O'){
                 settic_31('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,0,1);
             }
              // Set 'X' if the button click value is 0
@@ -254,6 +269,7 @@ function Homes() {
             if(tic_32!=='X'){
                 settic_32('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,1,0);
             }
             // Set 'O' if the button click value is 1
@@ -262,6 +278,7 @@ function Homes() {
             if(tic_32!=='O'){
                 settic_32('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,1,1);
             }
             // Set 'X' if the button click value is 0
@@ -274,6 +291,7 @@ function Homes() {
             if(tic_33!=='X'){
                 settic_33('O');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,2,0);
             }
              // Set 'O' if the button click value is 1
@@ -282,6 +300,7 @@ function Homes() {
             if(tic_33!=='O'){
                 settic_33('X');
                 setvalue(-1);
+                setcount(count+1);
                 updateCell(2,2,1);
             }
              // Set 'X' if the button click value is 0
@@ -289,7 +308,7 @@ function Homes() {
         }
     
     }
-    
+    console.log(count)
     // const reset = (event) => {
     //     event.preventDefault(); // Prevent the default behavior of form submission
     //     window.location.reload(); // Reload the page
@@ -315,6 +334,7 @@ function Homes() {
         ])
         setwino(false);
         setwinx(false);
+        setcount(0);
     };
 
     // for reset button
@@ -333,9 +353,9 @@ function Homes() {
     </div>
             
     <div className='winner_box d-flex justify-content-center align-items-center ms-3 me-3'>
-    {wino ? <h2>Congrats {answer2} you won!!!<FaCrown style={{ color: "#FFD43B" }} /></h2> : ""}
-    {winx?<h2>Congrats {answer1} you won!!!<FaCrown style={{ color: "#FFD43B" }} /></h2>:""}
-  
+    {wino ? <h2>Congrats {answer2} you won!!!&nbsp;<FaCrown style={{ color: "#FFD43B", fontSize: "2em" }} /></h2> : ""}
+    {winx?<h2>Congrats {answer1} you won!!!&nbsp;<FaCrown style={{ color: "#FFD43B", fontSize: "2em" }} /></h2>:""}
+   {wino===false&&winx===false&&count===9?<h2>Oops!Match Draw&nbsp; <FaSadTear style={{ color: 'yellow', fontSize: '1.4em' }} /></h2>:""}
    </div>
      <Container>
      
@@ -394,12 +414,12 @@ function Homes() {
     <Container className='mybutton mt-3 '>
     <Row>
     <Col lg={6} md={6} sm={6} xs={6} className='justify-content-center text-center mybutton1'>
-    <button onClick={() => handleButtonClick(0)} disabled={count0 > count1||wino||winx}>
+    <button onClick={() => handleButtonClick(0)} disabled={count0 > count1||wino||winx||count===9}>
         <h2>{'X'}</h2>
     </button>
 </Col>
 <Col lg={6} md={6} sm={6} xs={6} className='justify-content-center text-center mybutton1'>
-    <button onClick={() => handleButtonClick(1)} disabled={count1 > count0||wino||winx}>
+    <button onClick={() => handleButtonClick(1)} disabled={count1 > count0||wino||winx||count===9}>
         <h2>{'O'}</h2>
     </button>
 </Col>
@@ -412,10 +432,6 @@ function Homes() {
      </Col>
     </Row>
     </Container>
-
-        
-    <a href="/about"> Go to About</a>
-
     </section>
     
     

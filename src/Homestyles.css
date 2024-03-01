@@ -1,0 +1,182 @@
+
+.main_page .name_class .input1,.input2{
+    color: #fffcfc;
+    border-color: #fff9c003;
+    border-width: 2px;
+    border-style: solid;
+    height: 66px;
+    width: 253px;
+    padding: 11px;
+    border-radius: 9px;
+    margin-right: 3px !important;
+    box-shadow: inset 0 0 4px rgb(255 255 255);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 2px solid #7ffdff;
+    background-color: #00374b;
+    
+}
+.box_shape{
+   
+  /*  background: linear-gradient(to top left, rgb(14 193 123 / 80%), rgb(75 36 255 / 68%));*/
+  background-color: #003252d1;
+    border-width: 2px;
+    border-style: solid;
+   /* box-shadow: 0 0 10px rgb(7 220 98 / 64%);*/
+   box-shadow: inset 0 0 10px rgb(0 6 3 / 64%), 0 0 10px rgb(0 6 3 / 64%);
+
+    border-top-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    border-color: #bdffd1;
+    
+}
+.box_shape .point{
+    cursor:pointer;
+}
+.main_page .cross{
+    font-size: 4.5rem;
+   
+    text-shadow: 
+    -1px -4px 8px rgba(0, 0, 0, 3.5), /* Inward shadow */
+    4px 2px 8px rgba(0, 0, 0, 2.5);
+    color:#11ffe0;
+    cursor: pointer;
+}
+.custom-column1 {
+    border-right: 7px solid #b6d11c;
+    border-bottom: 7px solid #b6d11c;
+   
+    box-shadow: 
+    5px 0 5px -5px blue, /* Right side outside shadow */
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+ 
+}
+.custom-column2 {
+    border-right: 7px solid #b6d11c;
+    border-bottom: 7px solid #b6d11c;
+    box-shadow: 
+    5px 0 5px -5px blue, /* Right side outside shadow */
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+    
+}
+.custom-column3 {
+    
+    border-bottom: 7px solid #b6d11c;
+    box-shadow: 
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+    
+}
+
+.custom-column4 {
+    border-right: 7px solid #b6d11c;
+    border-bottom: 7px solid #b6d11c;
+    box-shadow: 
+    5px 0 5px -5px blue, /* Right side outside shadow */
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+    
+}
+
+.custom-column5 {
+    border-right: 7px solid #b6d11c;
+    border-bottom: 7px solid #b6d11c;
+    box-shadow: 
+    5px 0 5px -5px blue,
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+    
+}
+.custom-column6 {
+  
+    border-bottom: 7px solid #b6d11c;
+    box-shadow: 
+ 
+    0 5px 5px -5px blue; /* Bottom side outside shadow */
+
+}
+.custom-column7 {
+    border-right: 7px solid #b6d11c;
+    box-shadow: 
+    5px 0 5px -5px blue;
+}
+.custom-column8 {
+    border-right: 7px solid #b6d11c;
+    box-shadow: 
+    5px 0 5px -5px blue; /* Right side outside shadow */
+}
+.mybutton button {
+    width: 80px !important;
+    height: 60px;
+    background-color: #d31ae8;
+    border: 2px solid #feb2ff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 0 11px #ee1ea9;
+    text-shadow: 2px 1px 11px blue;
+    font-size: 1.9rem;
+}
+.mybutton button:active
+ {
+  color: rgb(253, 0, 0);
+  background-color: white;
+  border-color: white;
+  text-shadow: 2px 2px 4px blue; 
+
+}
+
+.box_shape .custom-column {
+    min-width: 50px;
+    min-height: 100px;
+}
+#reset_button button {
+    width: 164px !important;
+    height: 60px;
+    background-color: #15041200;
+    border: 2px solid #2dbbff;
+    border-radius: 5px;
+    color: #f8fff3;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px #36bdff;
+    text-shadow: 2px 2px 4px #2a7cff;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+#reset_button button:active{
+    background-color: white;
+    color: #000000;
+}
+/*  Login section */
+
+.winner_box h2{
+    opacity: 1;
+    background-color: #081313;
+    color: #60ff2e;
+    height: auto;
+    font-size: 1.9rem;
+    padding: 13px;
+    border: 2px solid #fffbfb;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgb(255 255 255 / 45%), 0 0 10px rgb(245 255 250);
+    z-index: 10000;
+}
+
+@media (max-width:613px){
+    .main_page .name_class{
+        flex-direction: column;
+        margin-bottom:5px;
+    }
+    .main_page .name_class .input1{
+      
+        margin-bottom:3px;
+        height: 56px;
+        width: 210px;
+    }
+    .main_page .cross{
+        font-size: 3rem;
+    }
+}
+@media (min-width:991.5px){
+    .box_shape .custom-column {
+        min-width: 50px;
+        min-height: 115px;
+    }
+}

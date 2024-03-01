@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
 import "../../src/Homestyles.css"
-import { Row,Col,Container } from 'react-bootstrap'
+import { Row,Col,Container, Button } from 'react-bootstrap'
 import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrown } from '@fortawesome/free-solid-svg-icons';
 import { FaCrown } from 'react-icons/fa';
 
-function Homes(props) {
+function Homes() {
    // document.body.style.background = 'none';
     const location=useLocation();
     const data=location.state?.data;
@@ -414,7 +414,7 @@ function Homes(props) {
     </Container>
 
         
-
+    <a href="/about"> Go to About</a>
 
     </section>
     
